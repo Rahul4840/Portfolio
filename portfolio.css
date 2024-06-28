@@ -1,0 +1,351 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    color: white;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background: black;
+    position: fixed;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    left: 20px;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-right: 50px;
+    transition: 100ms;
+}
+.navbar a:hover {
+    color: aqua;
+    font-size: 17px;
+    transition: 100ms;
+}
+.home {
+    background: url("./images/portfolio-back-min.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:100vh;   
+}
+.home h1 {
+    color: aqua;
+    transition: 300ms;
+}
+.home h1:hover {
+    color: aqua;
+    transition: 600ms;
+    transform: scale(1.1,1.1);
+    text-shadow: 2px 2px 10px rgb(30, 255, 236);
+}
+.photo {
+    float: right;
+    margin-right: 140px;
+    margin-top: -80px ;
+    width: 400px;
+    height: 400px;
+    border: 10px solid rgb(86, 87, 86);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 10px white, -5px -5px 10px 10px white ;
+}
+.home-content {
+    position: relative;
+    left: 320px;
+    top: 230px;
+    text-align: justify;
+    width: 550px;
+}
+.bi-linkedin, .bi-whatsapp, .bi-facebook, .bi-instagram {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background: black;
+    color: aqua;;
+    margin-right: 10px;
+}
+
+.icons a:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 20px aqua;
+}
+.icons {
+    position: absolute;
+    top: 520px;         
+    left: 320px;
+}
+.btn-more{
+    width: 130px;
+    height: 20px;
+    border: 1px solid aqua;
+    border-radius: 80px;
+    padding: 8px;
+    text-decoration: none;
+    color: aqua;
+}
+#myimg{
+    padding-top: 220px;
+}
+.more {
+    margin-top: 30px;
+}
+.about {
+    background: url("./images/portfolio-back2-min.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:100vh;
+}
+.about-para {
+    width: 600px;
+    float: right;
+    text-align: justify;
+    padding-top: 120px;
+}
+.about-para h2  {
+    color: aqua;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgb(7, 255, 255);
+    transition: 400ms;
+}
+
+.about h4:hover {
+    color: aqua;
+    text-shadow: 2px 2px 10px rgb(7, 255, 255);
+    transition: 400ms;
+}
+.btn-about {
+    text-decoration: none;
+    border: 1px solid aqua;
+    border-radius: 80px;
+    color: aqua;
+    padding: 8px;
+}
+.btn-about:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 20px aqua;
+}
+
+.skill {
+    background: url("./images/portfolio-back1-min.jpg");
+    background-size: cover;
+    background-position: fixed;
+    height: 100vh;
+    width: 100%;
+    padding-top: 65px;    
+}
+.skill-progress {
+    padding-left: 100px;
+}
+.tech-skills {
+    align-items: center;
+}
+.tech-skill {
+    color: aqua;
+    text-shadow: 2px 2px 20px rgb(7, 255, 255);
+    transition: 100ms;
+    font-size: 35px;
+}
+.skill-title:hover {
+    color: aqua;
+    text-shadow: 2px 2px 20px rgb(7, 255, 255);
+    transition: 400ms;
+}
+.circle1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(blue 0% 80%, rgb(123, 119, 119) 80% 100%);
+    margin: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+.circle2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(blue 0% 70%, rgb(123, 119, 119) 70% 100%);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+.circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(blue 0% 65%, rgb(123, 119, 119) 65% 100%);
+    margin: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+.circle4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(blue 0% 60%, rgb(123, 119, 119) 60% 100%);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.inside-circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+}
+.rounded {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 110px;
+}
+.rounded span {
+    position: absolute;
+    bottom: 20px;
+    left: 44px;
+}
+.project {
+    width: 100%;
+    height: 100vh;
+    background: url("./images/portfolio-back3-min.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+.project-title {
+    padding-top: 75px;
+}
+.project-title:hover {
+    color: aqua;
+    text-shadow: 2px 2px 20px rgb(7, 255, 255);
+    transition: 400ms;   
+}
+.cards {
+    width: 250px;
+    height: 350px;
+    border: 1px solid gray;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgb(34, 33, 33);
+    box-shadow: 5px 5px 15px white, -5px -5px 15px white;
+    transform: scale(1, 1);
+    transition: 400ms;
+}
+.cards:hover {
+    transform: scale(1.1, 1.1);
+    transition: 600ms;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+}
+.card1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;  
+}
+.card1 a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+footer {
+    background: url("./images/portfolio-back1-min.jpg");
+    background-size: cover;
+    padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+} 
+footer h2:hover {
+    color: aqua;
+    text-shadow: 2px 2px 20px rgb(7, 255, 255);
+    transition: 400ms;
+}
+.contact-text {
+    width: 700px;
+    text-align: justify;
+    padding: 70px;
+}
+.contact-icon a:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 20px aqua;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+.message input {
+    color: white;
+}
+.btn-submit {
+    width: 561px;
+    height: 35px;
+    color: white;
+    border: 1px solid aqua;
+    border-radius: 80px;
+    background-color: black;
+}
+.btn-submit:hover {
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 20px aqua;
+}
